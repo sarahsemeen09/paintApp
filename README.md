@@ -7,13 +7,13 @@ java version "1.8.0_181"
 
 # Comments on Design
 
-""Paint Canvas and ShapeList:""
+Paint Canvas and ShapeList:
 
 - A Singleton pattern is used for the Paint Canvas and also the Shape List
 - This is done because having a single instance for the canvas helps in maintaining exclusivity
 - Various classes are implemented onto the paint canvas and changes are made
 
-""For Drawing Shapes""
+For Drawing Shapes
 - A stategy pattern in used to draw the shape onto the canvas. 
 - The CreateShapeCommand specifies the shape to be created and the DrawShape puts the patterns onto the canvas. 
 - They both in collaboration make for a cleaner execution of shapes.
@@ -21,11 +21,11 @@ java version "1.8.0_181"
 else statements and the whole flow process gets complicated and too many
 dependencies would’ve been created.
 
-""For selecting shapes"" 
+For selecting shapes 
 - A factory pattern is used to implement the select shape aspect of the project. 
 - It reduces the switch statements and makes room for more shapes if we decide to add more later
 
-""Choosing between Draw, Select and Move""
+Choosing between Draw, Select and Move
 - Command pattern is used to create the three different modes
 - CreateShapeCommand, MoveShapeCommand and SelectShapeCommand work in collaboration with the GUI created. 
 - They take their parameters ( the start and end point) from the users and implement the changes onto the paint canvas. 
