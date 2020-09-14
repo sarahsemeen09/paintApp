@@ -38,20 +38,9 @@ public class Main {
         CommandCentre.initiate(mousehandler,appState);
         /*Graphics2D graphics2d = paintCanvas.getGraphics2D();
         createshapeCommand n = new createshapeCommand(graphics2d);
-        n.makeR(10,20,30,40);
+        n.makeR(10,20,30,40);//
         
-        // For example purposes only; remove from your final project.
-//        try {
-//            Thread.sleep(500);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        Graphics2D graphics2d = paintCanvas.getGraphics2D();
-//        graphics2d.setColor(Color.GREEN);
-//        graphics2d.fillRect(12, 13, 200, 400);
-        graphics2d.setStroke(new BasicStroke(5));
-        graphics2d.setColor(Color.BLUE);
-        graphics2d.drawRect(1, 13, 200, 400);*/
+
     }
         
 }
